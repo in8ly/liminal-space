@@ -156,6 +156,28 @@ const BreathingAnimation = () => {
           </path>
         </g>
 
+        {/* Central pulsing star */}
+        <circle 
+          cx="600" 
+          cy="400" 
+          r="2" 
+          fill="#ffffff"
+          opacity="0.8"
+        >
+          <animate 
+            attributeName="r" 
+            values="1;3;1" 
+            dur="12s" 
+            repeatCount="indefinite"
+          />
+          <animate 
+            attributeName="opacity" 
+            values="0.4;1;0.4" 
+            dur="12s" 
+            repeatCount="indefinite"
+          />
+        </circle>
+
         {/* Water droplets */}
         <g id="droplets">
           <circle cx="800" cy="400" r="4" fill="#a3d4e5">
